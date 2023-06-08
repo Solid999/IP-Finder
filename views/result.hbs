@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/380e56958b.js" crossorigin="anonymous"></script>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipfinder | results</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">IP-Info-finder</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="https://github.com/Solid999">Github</a></li>
+        <li><a href="https://www.npmjs.com/package/ip-info-finder">Credits</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h2>Results</h2>
+   <div class="box">
+    <h4 class="ip">{{ip}}</h4>
+    <div class="result">
+      <div><i class="fa-solid fa-city"></i> <strong>City:</strong> <u>{{City}}</u></div>
+    <div><i class="fa-solid fa-mountain-sun"></i> <strong>Region:</strong> <u>{{Region}}</u></div>
+    <div><i class="fa-solid fa-earth-europe"></i> <strong>Country:</strong> <u>{{Country}}</u></div>
+    <div><i class="fa-solid fa-earth-europe"></i> <strong>Continent:</strong> <u>{{Continent}}</u></div>
+    <div><i class="fa-solid fa-location-arrow"></i> <strong>Coordinates:</strong> <u>{{Coordinates}}</u></div>
+    <div><i class="fa-solid fa-timeline"></i> <strong>Time:</strong> <u>{{Time}}</u></div>
+    <div><i class="fa-solid fa-link"></i> <strong>Hostname:</strong> <u>{{Hostname}}</u></div>
+    <div><i class="fa-solid fa-wifi"></i> <strong>Provider:</strong> <u>{{Provider}}</u></div>
+    <div><i class="fa-brands fa-usps"></i> <strong>Postalcode:</strong> <u>{{Postalcode}}</u></div>
+    </div>
+   </div>
+
+   <div class="googlebox">
+    <img class="googlelogo" width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+    <div class="text"><strong><a href="https://www.google.de/maps/place/{{google}}/">Look up on Google Maps</a></strong></div>
+   </div>
+</body>
+<script src="./js/home.js"></script>
+</html>
